@@ -2,6 +2,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
+    path('',include('knowledge_bank.urls')),
     path('admin/', admin.site.urls),
-    path(r'^tinymce/', include('tinymce.urls')),
+    path('^tinymce/', include('tinymce.urls')),
 ]
